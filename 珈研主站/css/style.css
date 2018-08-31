@@ -1,0 +1,190 @@
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        color: #f3f3f3
+    }
+
+    html,
+    body {
+        height: 100%;
+    }
+
+    img {
+        border: none;
+    }
+
+    * {
+        font-family: '微软雅黑';
+        font-size: 12px;
+        color: #626262;
+    }
+
+    dl,
+    dt,
+    dd {
+        display: block;
+        margin: 0;
+        margin-bottom: 0;
+        font-weight: normal;
+    }
+
+    a {
+        text-decoration: none !important;
+    }
+
+    a:hover {
+        color: #00c0ff !important;
+    }
+
+    #bg {
+        background-color: #f4f6f8;
+        /*background-image: url(images/content/dotted.png);*/
+    }
+
+    #source_head {
+        height: 60px;
+        width: 1200px;
+        margin: 20px auto;
+        line-height: 60px;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .container {
+        width: 1200px;
+        height: 100%;
+        margin: auto;
+        /*padding-top: 30px;*/
+    }
+    /*left*/
+
+    .menus_area {
+        float: left;
+        width: 180px;
+        padding-top: 20px;
+        box-sizing: border-box;
+        min-height: 800px;
+        background-color: #fff;
+/*        width: 180px;
+        height: auto !important;
+        overflow: visible !important;
+        position: fixed;
+        height: 100% !important;
+        background-color: #fff;*/
+    }
+
+    /*    .line {
+        height: 2px;
+        width: 100%;
+        background-image: url(images/left/line_bg.png);
+        background-repeat: repeat-x;
+    }*/
+
+    .menus_area dt {
+        text-align: center;
+        height: 36px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #666666;
+        line-height: 36px;
+        /*cursor: pointer;*/
+        border-bottom: 1px solid #B9B9B9;
+    }
+
+    .menus_area dl {
+        padding-bottom: 10px;
+    }
+
+/*    .menus_area dd {
+        height: 36px;
+        color: #666666;
+        line-height: 36px;
+    }*/
+
+    .menus_area dd a {
+        display: block;
+        color: #777;
+        font-size: 14px;
+        text-align: right;
+        height: 36px;
+        line-height: 36px;
+        padding-right: 20%;
+        /*text-decoration: none;*/
+    }
+
+
+/*    .menus_area dt img {
+        position: absolute;
+        right: 10px;
+        top: 20px;
+    }
+*/
+/*    .system_log dt {
+        background-image: url(images/left/system.png)
+    }
+*/
+/*    .custom dt {
+        background-image: url(images/left/custom.png)
+    }
+
+    .channel dt {
+        background-image: url(images/left/channel.png)
+    }
+
+    .app dt {
+        background-image: url(images/left/app.png)
+    }
+
+    .cloud dt {
+        background-image: url(images/left/cloud.png)
+    }
+
+    .syetem_management dt {
+        background-image: url(images/left/syetem_management.png)
+    }
+
+    .statistics dt {
+        background-image: url(images/left/statistics.png)
+    }
+*/
+
+/*    dt.on {
+        background-color: #317eb4
+    }
+*/
+    .right-content {
+        float: left;
+        width: 950px;
+        box-sizing: border-box;
+        min-height: 800px;
+        margin-left: 20px;
+        background-color: #fff;
+    }
+
+/*    .main-title {
+        height: 70px;
+        line-height: 70px;
+        font-size: 30px;
+        text-align: center;
+    }*/
+
+    .select {
+        float: left;
+        margin-left: 5%;
+        padding-top: 20px;
+    }
+
+    .switch {
+        float: right;
+        margin-right: 5%;
+        padding-top: 20px;
+    }
+
+    .switch button:1th {
+        padding-right: 15%;
+    }
+
+    /*    .menus_area dl dd:last-child {
+        padding-bottom: 10px;
+    }*/
