@@ -11,37 +11,7 @@
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/style.css">
     <style type="text/css">
-    #allmap {
-        width: 90%;
-        height: 90%;
-        overflow: hidden;
-        margin: 0 auto;
-        font-family: "微软雅黑";
-        box-shadow: 0 0 1px #000 inset;
-        border: 2px solid #D3D2D0;
-        padding-top: 10px;
-    }
 
-    #info {
-        width: 22%;
-        height: 90%;
-        z-index: 1;
-        background-color: #D3D2D0;
-        position: absolute;
-        top: 25%;
-        right: 14%;
-        opacity: 0.7;
-    }
-
-    .customer dt {
-        font-size: 14px;
-        font-weight: bold;
-    }
-
-    .dd {
-        margin: 5% 0 5% 0;
-        font-size: 12px;
-    }
     </style>
 </head>
 
@@ -66,7 +36,7 @@
                 <div class="aui-head-login">
                     <ul>
                         <li><a href="register.html" class="aui-head-register">注册</a></li>
-                        <li><a href="lo">登录</a></li>
+                        <li><a href="login.html">登录</a></li>
                     </ul>
                 </div>
             </div>
@@ -171,170 +141,147 @@
             <div>
                 <div id="allmap"></div>
                 <div id="info">
-                    <!-- <ol>
-                    <li><span class="sellerCustomer">眉州东坡酒楼（望京店）</span><span class="distance">30 min / 1.2 km</span></li>
-                    <li><span class="sellerCustomer">重庆记忆老灶火锅（望京店）</span><span class="distance">30 min / 1.2 km</span></li>
-                    <li><span class="sellerCustomer">阿荣小镇火锅（望京店）</span><span class="distance">30 min / 1.2 km</span></li>
-                    <li><span class="sellerCustomer">幕一幕一餐吧（望京店）</span><span class="distance">30 min / 1.2 km</span></li>
-                </ol> -->
                     <ul class="nav nav-tabs">
-                        <li><a href="#A" data-toggle="tab">Office</a></li>
-                        <li><a href="#B" data-toggle="tab">Gov</a></li>
-                        <li><a href="#C" data-toggle="tab">Edu</a></li>
-                        <li><a href="#D" data-toggle="tab">Life</a></li>
-                        <li class="active"><a href="#E" data-toggle="tab">Other</a></li>
+                        <li class="active"><a href="#A" data-toggle="tab">附近</a></li>
+                        <li><a href="#B" data-toggle="tab">活跃</a></li>
+                        <li><a href="#C" data-toggle="tab">未开发</a></li>
                     </ul>
                     <div id="myTabContent" class="tab-content">
-                        <input type="hidden" name="tabChoose" id="tabChoose" value="0" />
                         <div class="tab-pane fade in active" id="A">
-                            <div class="form-group has-feedback">
-                                <dl class="dl-horizontal customer">
-                                    <a href="#">
-                                        <dt>眉州东坡酒楼（望京店）</dt>
-                                        <dd class="dd">30 min / 1.2 km</dd>
-                                    </a>
-                                    <a href="#">
-                                        <dt>重庆记忆老灶火锅（望京店）</dt>
-                                        <dd class="dd">30 min / 1.2 km</dd>
-                                    </a>
-                                    <a href="#">
-                                        <dt>阿荣小镇火锅（望京店）</dt>
-                                        <dd class="dd">30 min / 1.2 km</dd>
-                                    </a>
-                                    <a href="#">
-                                        <dt>幕一幕一餐吧（望京店）</dt>
-                                        <dd class="dd">30 min / 1.2 km</dd>
-                                    </a>
-                                </dl>
-                            </div>
+                            <ul class="customer_list">
+                                <li>眉州东坡酒楼
+                                    <i>1.2km</i>
+                                </li>
+                                <li>重庆记忆老灶火锅
+                                    <i>1.2km</i>
+                                </li>
+                                <li>阿荣小镇火锅
+                                    <i>1.2km</i>
+                                </li>
+                                <li>幕一幕一餐吧
+                                    <i>1.2km</i>
+                                </li>
+                            </ul>
                         </div>
                         <div class="tab-pane fade" id="B">
-                            <div class="form-group has-feedback">
-                                <dl class="dl-horizontal customer">
-                                    <a href="#">
-                                        <dt>眉州东坡酒楼（武汉店）</dt>
-                                        <dd class="dd">30 min / 1.2 km</dd>
-                                    </a>
-                                    <a href="#">
-                                        <dt>重庆记忆老灶火锅（武汉店）</dt>
-                                        <dd class="dd">30 min / 1.2 km</dd>
-                                    </a>
-                                    <a href="#">
-                                        <dt>阿荣小镇火锅（武汉店）</dt>
-                                        <dd class="dd">30 min / 1.2 km</dd>
-                                    </a>
-                                    <a href="#">
-                                        <dt>幕一幕一餐吧（武汉店）</dt>
-                                        <dd class="dd">30 min / 1.2 km</dd>
-                                    </a>
-                                </dl>
-                            </div>
+                            <ul class="customer_list">
+                                <li>眉州东坡酒楼
+                                    <i>1.2km</i>
+                                </li>
+                                <li>重庆记忆老灶火锅
+                                    <i>1.2km</i>
+                                </li>
+                                <li>阿荣小镇火锅
+                                    <i>1.2km</i>
+                                </li>
+                                <li>幕一幕一餐吧
+                                    <i>1.2km</i>
+                                </li>
+                            </ul>
                         </div>
                         <div class="tab-pane fade" id="C">
-                            <div class="form-group has-feedback">
-                                <dl class="dl-horizontal customer">
-                                    <a href="#">
-                                        <dt>眉州东坡酒楼（北京店）</dt>
-                                        <dd class="dd">30 min / 1.2 km</dd>
-                                    </a>
-                                    <a href="#">
-                                        <dt>重庆记忆老灶火锅（北京店）</dt>
-                                        <dd class="dd">30 min / 1.2 km</dd>
-                                    </a>
-                                    <a href="#">
-                                        <dt>阿荣小镇火锅（北京店）</dt>
-                                        <dd class="dd">30 min / 1.2 km</dd>
-                                    </a>
-                                    <a href="#">
-                                        <dt>幕一幕一餐吧（北京店）</dt>
-                                        <dd class="dd">30 min / 1.2 km</dd>
-                                    </a>
-                                </dl>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="D">
-                            <div class="form-group has-feedback">
-                                <dl class="dl-horizontal customer">
-                                    <a href="#">
-                                        <dt>眉州东坡酒楼（海南店）</dt>
-                                        <dd class="dd">30 min / 1.2 km</dd>
-                                    </a>
-                                    <a href="#">
-                                        <dt>重庆记忆老灶火锅（海南店）</dt>
-                                        <dd class="dd">30 min / 1.2 km</dd>
-                                    </a>
-                                    <a href="#">
-                                        <dt>阿荣小镇火锅（海南店）</dt>
-                                        <dd class="dd">30 min / 1.2 km</dd>
-                                    </a>
-                                    <a href="#">
-                                        <dt>幕一幕一餐吧（海南店）</dt>
-                                        <dd class="dd">30 min / 1.2 km</dd>
-                                    </a>
-                                </dl>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="E">
-                            <div class="form-group has-feedback">
-                                <dl class="dl-horizontal customer">
-                                    <a href="#">
-                                        <dt>眉州东坡酒楼（台北店）</dt>
-                                        <dd class="dd">30 min / 1.2 km</dd>
-                                    </a>
-                                    <a href="#">
-                                        <dt>重庆记忆老灶火锅（台北店）</dt>
-                                        <dd class="dd">30 min / 1.2 km</dd>
-                                    </a>
-                                    <a href="#">
-                                        <dt>阿荣小镇火锅（台北店）</dt>
-                                        <dd class="dd">30 min / 1.2 km</dd>
-                                    </a>
-                                    <a href="#">
-                                        <dt>幕一幕一餐吧（台北店）</dt>
-                                        <dd class="dd">30 min / 1.2 km</dd>
-                                    </a>
-                                </dl>
-                            </div>
+                            <ul class="customer_list">
+                                <li>眉州东坡酒楼
+                                    <i>1.2km</i>
+                                </li>
+                                <li>重庆记忆老灶火锅
+                                    <i>1.2km</i>
+                                </li>
+                                <li>阿荣小镇火锅
+                                    <i>1.2km</i>
+                                </li>
+                                <li>幕一幕一餐吧
+                                    <i>1.2km</i>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- footer begin -->
+        <section id="aui-footer">
+            <div class="aui-footer">
+                <div class="aui-container clearfix">
+                    <div class="aui-footer-list">
+                        <div class="aui-footer-title">产品目录</div>
+                        <ul>
+                            <li><a href="#" title="" target="_blank">私有云计算</a></li>
+                            <li><a href="#" title="" target="_blank">魔盒服务器</a></li>
+                            <li><a href="#" title="" target="_blank">镜像市场</a></li>
+                            <li><a href="#" title="" target="_blank">解决方案</a></li>
+                            <li><a href="#" title="" target="_blank">客户案例</a></li>
+                        </ul>
+                    </div>
+                    <div class="aui-footer-list">
+                        <div class="aui-footer-title">价格服务</div>
+                        <ul>
+                            <li><a href="#" title="" target="_blank">产品价格</a></li>
+                            <li><a href="#" title="" target="_blank">产品服务</a></li>
+                            <li><a href="#" title="" target="_blank">服务条款</a></li>
+                            <li><a href="#" title="" target="_blank">常见问题</a></li>
+                        </ul>
+                    </div>
+                    <div class="aui-footer-list">
+                        <div class="aui-footer-title">帮助文档</div>
+                        <ul>
+                            <li><a href="#" title="" target="_blank">帮助文档</a></li>
+                            <li><a href="#" title="" target="_blank">社区问答</a></li>
+                            <li><a href="#" title="" target="_blank">技术博客</a></li>
+                            <li><a href="#" title="" target="_blank">开发平台</a></li>
+                            <li><a href="#" title="" target="_blank">API接口</a></li>
+                        </ul>
+                    </div>
+                    <div class="aui-footer-list">
+                        <div class="aui-footer-title">关于我们</div>
+                        <ul>
+                            <li><a href="#" title="" target="_blank">关于我们</a></li>
+                            <li><a href="#" title="" target="_blank">合作伙伴</a></li>
+                            <li><a href="#" title="" target="_blank">加入我们</a></li>
+                            <li><a href="#" title="" target="_blank">联系我们</a></li>
+                            <li><a href="#" title="" target="_blank">合作事宜</a></li>
+                        </ul>
+                    </div>
+                    <div class="aui-footer-list">
+                        <div class="aui-footer-title">联系我们</div>
+                        <ul>
+                            <li><a href="#" title="" target="_blank">业务咨询</a></li>
+                            <li><a href="#" title="" target="_blank">渠道合作</a></li>
+                            <li><a href="#" title="" target="_blank">市场合作</a></li>
+                            <li><a href="#" title="" target="_blank">联系我们</a></li>
+                            <li><a href="#" title="" target="_blank">合作事宜</a></li>
+                        </ul>
+                    </div>
+                    <div class="aui-footer-list-right">
+                        <div class="aui-footer-code"><img src="img/icon/foot-wx.jpg" alt=""></div>
+                        <div class="aui-footer-ewm">扫一扫关注我们</div>
+                        <div class="footer_img">
+                            <ul>
+                                <li><a href="http://weibo.com/azenui" target="_blank" title="小贝壳微博"><img src="images/icon-wb.png"></a></li>
+                                <li><a href="http://tieba.baidu.com/home/main?id=cd74617569cbd8b2c4cdf86487&fr=userbar" title="小贝壳贴吧" target="_blank"><img src="images/icon-qq.png"></a></li>
+                                <li><a href="http://huaban.com/aiui/" title="小贝壳花瓣" target="_blank"><img src="images/icon-hb.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="aui-footer-info">
+                    <div class="aui-container">
+                        <div class="aui-footer-copy" style="text-align: center;">
+                            <p>版权所有： © 2017 武汉珈研信息科技有限公司 京ICP备15006025号-3</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <!-- footer end -->
 </body>
 <script src="js/jquery-1.10.2.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="http://api.map.baidu.com/api?v=2.0&ak=Ec4VbDTTjjuEGtVGzSvPwwQtvnvWFeGY"></script>
 <!-- <script src="js/slider.js"></script> -->
 <script type="text/javascript">
-// $(function() {
-//     $("#menus_area").find("dt").click(function() { //一级菜单点击
-//         if (!$(this).hasClass("on")) { //当前一级菜单不选中状态才切换
-//             $("#menus_area").find("dt").removeClass("on"); //所有的一级菜单去除选中样式
-//             $(this).addClass("on"); //当前一级菜单去除选中样式
-//             $('dd').slideUp(); //所有二级菜单隐藏
-//             $(this).nextAll('dd').slideToggle(); //当前所有二级菜单切换
-//         }
-//     });
-// })
-
-// $(function() {
-//     var bannerSlider = new Slider($('#banner_tabs'), {
-//         time: 5000,
-//         delay: 400,
-//         event: 'hover',
-//         auto: true,
-//         mode: 'fade',
-//         controller: $('#bannerCtrl'),
-//         activeControllerCls: 'active'
-//     });
-//     $('#banner_tabs .flex-prev').click(function() {
-//         bannerSlider.prev()
-//     });
-//     $('#banner_tabs .flex-next').click(function() {
-//         bannerSlider.next()
-//     });
-// });
 
 // 百度地图API功能
 var map = new BMap.Map("allmap");
