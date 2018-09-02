@@ -183,3 +183,37 @@
         color: #5c9a5d;
         font-weight: 400;
     }
+
+    #info .customer_list a {
+        display: block;
+        background: #fff;
+        height: 54px;
+        padding-top: 17px;
+        padding-left: 26px;
+        border-bottom: 1px solid #eee;
+    }
+
+    #info .customer_list a:hover {
+        background: #d2d1d1;
+    }
+
+    #info .customer_list a:active {
+        background: #d2d1d1;
+    }
+
+
+    #info .customer_list dt {
+        display: inline-block;
+        font-size: 14px;
+        width: 120px;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
+    }
+
+    #info .customer_list dd {
+        display: inline-block;
+        margin-left: 30px;
+        color: #5c9a5d;
+        overflow:hidden;
+    }
