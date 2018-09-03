@@ -42,6 +42,18 @@
         /*background-image: url(images/content/dotted.png);*/
     }
 
+    .aui-head-menu a {
+        color: #666;
+    }
+
+    .aui-head-menu a:hover {
+        color: #333 !important;
+    }
+    
+    .aui-head-register:hover {
+        color: #fff !important;
+    }
+
     #source_head {
         height: 60px;
         width: 1200px;
